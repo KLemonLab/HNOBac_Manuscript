@@ -1,0 +1,40 @@
+Cytokine,Cyto,Category
+Eotaxin,Eotaxin,Allergy
+IL-5,IL-5,Allergy
+IL-13,IL-13,Allergy
+IL-17A,IL-17,Allergy
+IL-17E,IL-25,Allergy
+IL-18,IL-18,Inflammasome
+IL-1a,IL-1α,Inflammasome
+IL-1b,IL-1β,Inflammasome
+IL-1RA,IL-1RN,Inflammasome
+IL-36b,IL-36β,Inflammasome
+MMP-1,MMP-1,MMPs
+MMP-2,MMP-2,MMPs
+MMP-7,MMP-7,MMPs
+MMP-9,MMP-9,MMPs
+MMP-10,MMP-10,MMPs
+TNFa,TNF-α,Acute
+IL-6,IL-6,Acute
+IL-32a,IL-32,Acute
+IL-8,IL-8,Chemokines
+MCP-1,CCL-2,Chemokines
+MIP-1a,CCL-3,Chemokines
+MIP-1b,CCL-4,Chemokines
+RANTES,CCL-5,Chemokines
+MCP-3,CCL-7,Chemokines
+MIP3b,CCL-19,Chemokines
+MIP3a,CCL-20,Chemokines
+IL-12 (P70),IL-12,Chemokines
+GM-CSF,GM-CSF,GF
+G-CSF,G-CSF,GF
+VEGF-A,L-VEGF,GF
+MIG,CXCL-9,Viral Response
+IP-10,CXCL-10,Viral Response
+I-TAC/CXCL11,CXCL-11,Viral Response
+IFNa2,IFN-α2,Viral Response
+IFNy,IFN-γ,Viral Response
+IL-29/IFN-y1,IFN-λ1,Viral Response
+IL-10,IL-10,Anti-In 
+IL-37,IL-37,Anti-In 
+IL-38,IL-1F10,Anti-In 
