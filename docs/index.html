@@ -9,7 +9,7 @@
 <meta name="author" content="Leah Kafer">
 <meta name="author" content="Andrea Boyd">
 <meta name="author" content="Isabel F. Escapa">
-<meta name="dcterms.date" content="2024-10-02">
+<meta name="dcterms.date" content="2025-04-28">
 
 <title>HNOBac Manuscript</title>
 <style>
@@ -4563,19 +4563,31 @@ vertical-align: -.125em;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Methods_MOC.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cell Counts</span></a>
+ <span class="menu-text">Cell Counts &amp; TEER</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Methods_CFUs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CFUs</span></a>
+ <span class="menu-text">CFUs 48h</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Methods_CFUs_6h.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CFUs Epithelial Lines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Methods_LDH.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">LDH</span></a>
+ <span class="menu-text">LDH 48h</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Methods_LDH_6h.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LDH Epithelial Lines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -4592,12 +4604,6 @@ vertical-align: -.125em;
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./RSession.html" class="sidebar-item-text sidebar-link">
@@ -4635,7 +4641,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 2, 2024</p>
+      <p class="date">April 28, 2025</p>
     </div>
   </div>
   
@@ -4647,8 +4653,32 @@ vertical-align: -.125em;
 
 <section id="introduction" class="level1 unnumbered unlisted">
 <h1 class="unnumbered unlisted">Introduction</h1>
-<p>This repository includes Supplemental Methods for the manuscript <strong>Nasal microbionts differentially colonize and elicit cytokines in human nasal epithelial organoids</strong>.</p>
-<p>Link to bioRxiv: <a href="https://www.biorxiv.org/content/10.1101/2024.09.25.614934v1" class="uri">https://www.biorxiv.org/content/10.1101/2024.09.25.614934v1</a></p>
+<p>This repository includes the code used for data analysis for the manuscript <strong>Nasal microbionts differentially colonize and elicit cytokines in human nasal epithelial organoids</strong>. A preprint of this manuscript is available at <a href="https://www.biorxiv.org/content/10.1101/2024.09.25.614934v1">bioRxiv</a>.</p>
+<p>All <strong>dataframes</strong> generated in the analysis from the raw data and metadata (see data input section for each code notebook) are available <a href="https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/dataframes">here</a> as both <code>.csv</code> and <code>.rds</code> files.</p>
+<ul>
+<li><strong>Figure 1:</strong> Human nasal epithelial organoids tolerate nasal microbiont colonization and restrict bacteria to the mucus layer.
+<ul>
+<li><strong>Figure 1B:</strong> The code for data analysis for the CFU data at 34 °C is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs.html">here</a>.</li>
+<li><strong>Figure 1G:</strong> The code for data analysis for the LDH data at 34 °C is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH.html">here</a>.</li>
+<li>Additional images from independent experiments for this figure are available <a href="https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/microscopy/Figure_1">here</a>.</li>
+</ul></li>
+<li><strong>Supplemental Figure 1:</strong> Nasal microbionts colonize HNOs at human internal body temperature, 37 °C.
+<ul>
+<li><strong>Figure S1A:</strong> The code for data analysis for the RNASeq is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_RNASeq.html">here</a>.</li>
+<li><strong>Figure S1B:</strong> The code for data analysis for Cell Counts &amp; TEER is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_MOC.html">here</a>.</li>
+<li><strong>Figure S1C:</strong> The code for data analysis for the CFU data at 37 °C, as well as analysis at 34 vs 37 °C, is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs.html">here</a>.</li>
+<li><strong>Figure S1D:</strong> The code for data analysis for the LDH data at 37 °C, as well as analysis at 34 vs 37 °C, is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH.html">here</a>.</li>
+</ul></li>
+<li><strong>Figure 2:</strong> HNOs exhibit many characteristics of human nasal respiratory epithelium that are lacking in Calu-3 and RPMI 2650 cells. Additional images from independent experiments for this figure are available <a href="https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/microscopy/Figure_2">here</a>.</li>
+<li><strong>Figure 3:</strong> HNOs, Calu-3 cells, and RPMI 2650 cells at ALI exhibit similar levels of bacterial colonization and epithelial cell damage at 6 hours.
+<ul>
+<li><strong>Figure 3A:</strong> The code for data analysis for the CFU data is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs_6h.html">here</a>.</li>
+<li><strong>Figure 3B:</strong> The code for data analysis for the LDH data is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH_6h.html">here</a>.</li>
+</ul></li>
+<li><strong>Figure 4:</strong> The human nasal respiratory epithelium of HNOs produce general and species-specific cytokine responses to bacterial colonization. The code for data analysis for this figure is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_Cytokines.html">here</a>.</li>
+<li><strong>Figure 5:</strong> The human nasal epithelium of HNOs produces key cytokines in amounts orders of magnitude above the limit detection. The code for data analysis for this figure is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_Cytokines.html">here</a>.</li>
+<li><strong>Supplemental Figure 2:</strong> In response to live S. aureus monocolonization, HNO production of IL-1α activity dominates over IL-1RN activity resulting in IL-1 receptor activation apically and basally. The code for data analysis for this figure is available <a href="https://klemonlab.github.io/HNOBac_Manuscript/Methods_HekBlue.html">here</a>.</li>
+</ul>
 
 
 <!-- -->
@@ -4951,9 +4981,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction {.unnumbered .unlisted}</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>This repository includes Supplemental Methods for the manuscript **Nasal microbionts differentially colonize and elicit cytokines in human nasal epithelial organoids**.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>This repository includes the code used for data analysis for the manuscript **Nasal microbionts differentially colonize and elicit cytokines in human nasal epithelial organoids**. A preprint of this manuscript is available at <span class="co">[</span><span class="ot">bioRxiv</span><span class="co">](https://www.biorxiv.org/content/10.1101/2024.09.25.614934v1)</span>.</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Link to bioRxiv: <span class="ot">&lt;https://www.biorxiv.org/content/10.1101/2024.09.25.614934v1&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>All **dataframes** generated in the analysis from the raw data and metadata (see data input section for each code notebook) are available <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/dataframes)</span> as both <span class="in">`.csv`</span> and <span class="in">`.rds`</span> files.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Figure 1:** Human nasal epithelial organoids tolerate nasal microbiont colonization and restrict bacteria to the mucus layer.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure 1B:** The code for data analysis for the CFU data at 34 °C is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs.html)</span>.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure 1G:** The code for data analysis for the LDH data at 34 °C is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH.html)</span>.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Additional images from independent experiments for this figure are available <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/microscopy/Figure_1)</span>.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Supplemental Figure 1:** Nasal microbionts colonize HNOs at human internal body temperature, 37 °C.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure S1A:** The code for data analysis for the RNASeq is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_RNASeq.html)</span>.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure S1B:** The code for data analysis for Cell Counts &amp; TEER is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_MOC.html)</span>.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure S1C:** The code for data analysis for the CFU data at 37 °C, as well as analysis at 34 vs 37 °C, is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs.html)</span>.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure S1D:** The code for data analysis for the LDH data at 37 °C, as well as analysis at 34 vs 37 °C, is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH.html)</span>.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Figure 2:** HNOs exhibit many characteristics of human nasal respiratory epithelium that are lacking in Calu-3 and RPMI 2650 cells. Additional images from independent experiments for this figure are available <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/KLemonLab/HNOBac_Manuscript/tree/main/data/microscopy/Figure_2)</span>.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Figure 3:** HNOs, Calu-3 cells, and RPMI 2650 cells at ALI exhibit similar levels of bacterial colonization and epithelial cell damage at 6 hours.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure 3A:** The code for data analysis for the CFU data is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_CFUs_6h.html)</span>.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>**Figure 3B:** The code for data analysis for the LDH data is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_LDH_6h.html)</span>.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Figure 4:** The human nasal respiratory epithelium of HNOs produce general and species-specific cytokine responses to bacterial colonization. The code for data analysis for this figure is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_Cytokines.html)</span>.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Figure 5:** The human nasal epithelium of HNOs produces key cytokines in amounts orders of magnitude above the limit detection. The code for data analysis for this figure is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_Cytokines.html)</span>.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Supplemental Figure 2:** In response to live S. aureus monocolonization, HNO production of IL-1α activity dominates over IL-1RN activity resulting in IL-1 receptor activation apically and basally. The code for data analysis for this figure is available <span class="co">[</span><span class="ot">here</span><span class="co">](https://klemonlab.github.io/HNOBac_Manuscript/Methods_HekBlue.html)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
